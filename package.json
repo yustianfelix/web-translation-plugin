@@ -1,0 +1,22 @@
+{
+  "name": "web-translation-plugin",
+  "version": "0.1.0",
+  "description": "Client-side web translation plugin",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [
+    "translation",
+    "browser-extension",
+    "dom",
+    "mutations",
+    "ocr"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "vite": "^5.4.0"
+  }
+}
