@@ -1,7 +1,7 @@
 {
   "name": "web-translation-plugin",
-  "version": "0.1.0",
-  "description": "Client-side web translation plugin",
+  "version": "0.2.0",
+  "description": "Client-side web translation plugin with provider adapters, metadata extraction, and image OCR overlays",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -13,7 +13,8 @@
     "browser-extension",
     "dom",
     "mutations",
-    "ocr"
+    "ocr",
+    "localization"
   ],
   "license": "MIT",
   "devDependencies": {

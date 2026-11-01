@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Sample webpage used to test browser translation features and metadata extraction." />
+    <meta property="og:title" content="Demo page for translation plugin" />
+    <meta property="og:description" content="This demo page shows DOM, metadata, and image translation." />
+    <title>Translation Plugin Demo</title>
+    <link rel="stylesheet" href="/src/styles/demo.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <h1>Translation Plugin Demo</h1>
+        <div class="controls">
+          <label>
+            Target language
+            <select id="language-select">
+              <option value="en">English</option>
+              <option value="es">Spanish</option>
+              <option value="fr">French</option>
+              <option value="de">German</option>
+              <option value="ja">Japanese</option>
+            </select>
+          </label>
+          <button id="toggle-translation">Translate page</button>
+        </div>
+      </header>
+
+      <main class="content-grid">
+        <section class="card hero">
+          <h2>Welcome to our product</h2>
+          <p>
+            We build fast digital tools that help teams launch new experiences without sacrificing speed or usability.
+          </p>
+          <button aria-label="Get started with our platform">Get started</button>
+          <div class="cta-row">
+            <span class="badge">Enterprise-ready</span>
+            <span class="badge">Low-latency</span>
+          </div>
+        </section>
+
+        <section class="card">
+          <h3>Featured article</h3>
+          <img
+            src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80"
+            alt="Laptop on a desk with planning notes"
+            title="Productivity workspace"
+            width="500"
+            height="300"
+            data-image-translate="true"
+          />
+          <p class="image-caption">A modern workspace designed for shipping ideas quickly.</p>
+        </section>
+
+        <section class="card">
+          <h3>Form example</h3>
+          <label>
+            Name
+            <input type="text" placeholder="Enter your full name" value="" />
+          </label>
+          <label>
+            Search
+            <input type="search" placeholder="Search docs, tutorials, and guides" aria-label="Search the help center" />
+          </label>
+          <button type="button" value="Submit" aria-label="Submit the contact form">Submit</button>
+        </section>
+
+        <section class="card">
+          <h3>SVG demo</h3>
+          <svg viewBox="0 0 200 90" width="200" height="90" data-image-translate="true" role="img" aria-label="Delivery status icon">
+            <rect x="10" y="10" width="180" height="70" rx="12" fill="#0b5cff"></rect>
+            <text x="100" y="52" text-anchor="middle" font-size="22" fill="white">Live</text>
+            <title>Delivery status live</title>
+          </svg>
+        </section>
+
+        <section class="card">
+          <h3>Dynamic content</h3>
+          <div id="dynamic-container"></div>
+          <button id="add-content">Add dynamic content</button>
+        </section>
+      </main>
+    </div>
+
+    <script type="module" src="/src/index.js"></script>
+  </body>
+</html>
